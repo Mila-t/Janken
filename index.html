@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>じゃんけん</title>
+</head>
+<body>
+    <script>
+        const myHand= window.prompt("0:グー 1:チョキ 2:パーを入力してください。");
+        const pcHand= Math.floor(Math.random() * 2);
+
+        if(pcHand === 0){
+            const pcHand = 0;
+            switch(myHand){
+                case 0:
+                alert("グーです。あいこです。");
+                break;
+
+                case 1:
+                alert("グーです。 あなたの負けです。");
+                break;
+
+                default:
+                alert("グーです。あなたの勝ちです(^^)");
+            }
+            }else if(pcHand === 1){
+                const pcHand = 1;
+                    switch(myHand){
+                    case 0:
+                    alert("チョキです。あなたの勝ちです(^^)");
+                    break;
+
+                    case 1:
+                    alert("チョキです。あいこです。");
+                    break;
+
+                    default:
+                    alert("チョキです。 あなたの負けです。");
+                    break;
+                    }
+        }else{
+            const pcHand = 3;
+            switch(myHand){
+                case 0:
+                alert("パーです。あなたの負けです。");
+                break;
+
+                case 1:
+                alert("パーです。あなたの勝ちです(^^)");
+                break;
+
+                default:
+                alert("チョキです。 あいこです。");
+                break;
+            }
+         };
+        
+    </script>
+</body>
+</html>
